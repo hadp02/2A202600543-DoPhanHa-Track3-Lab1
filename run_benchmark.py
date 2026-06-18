@@ -3,6 +3,10 @@ import json
 from pathlib import Path
 import typer
 from rich import print
+from dotenv import load_dotenv
+
+load_dotenv()
+
 from src.reflexion_lab.agents import ReActAgent, ReflexionAgent
 from src.reflexion_lab.reporting import build_report, save_report
 from src.reflexion_lab.utils import load_dataset, save_jsonl
